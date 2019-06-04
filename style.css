@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap");
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+}
+
+.matrix {
+  display: inline-grid;
+  gap: 5px;
+  margin: 111px;
+}
+
+.matrix div {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  padding: 10px;
+}
+
+#matrix_first {
+  grid-template: 1fr 1fr / 1fr 1fr;
+}
+
+#matrix_first div {
+  background-color: red;
+}
+
+#matrix_second {
+  grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+}
+
+#matrix_second div {
+  background-color: yellow;
+}
+
+#matrix_third {
+  grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+}
+
+#matrix_third div {
+  background-color: green;
+}
